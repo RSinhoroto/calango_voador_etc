@@ -105,9 +105,9 @@ print('Testing with %d samples' % len(test_array))
 test_pred = mlp.predict(test_array)
 
 #plot confusion matrix for class score
-#cm = confusion_matrix(test_target, test_pred, labels=None, sample_weight=None)
-#plot_confusion_matrix(cm, classes=['Dark Green', 'Light Green', 'Black', 'Blue', 'Orange', 'Red'], 
-#   title='Terrain Classification Confusion Matrix', cmap='Greens')
+cm = confusion_matrix(test_target, test_pred, labels=None, sample_weight=None)
+plot_confusion_matrix(cm, classes=['Dark Green', 'Light Green', 'Black', 'Blue', 'Orange', 'Red'], 
+   title='Terrain Classification Confusion Matrix', cmap='Greens')
 
 
 #################### VALIDATION ####################
